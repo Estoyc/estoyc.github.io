@@ -2,49 +2,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESTOYC O NO ESTOYC – Pedro by Porto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ESTOYC O NO ESTOYC</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
       font-family: 'Helvetica Neue', sans-serif;
-      background-color: #eae6df;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #111;
       line-height: 1.6;
     }
-    header {
-      background-color: #111;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .book-cover {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .book-cover img {
-      max-width: 300px;
+    header img {
       width: 100%;
-      border: 4px solid #111;
+      max-width: 100%;
+      display: block;
+    }
+    .content {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 8px;
     }
     h2 {
-      color: #111;
       font-size: 1.6rem;
-      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #111;
+    }
+    p {
+      margin-bottom: 20px;
     }
     .cta {
-      display: block;
       text-align: center;
       margin: 40px 0;
     }
@@ -64,21 +58,16 @@
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
-      color: #777;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>ESTOYC O NO ESTOYC</h1>
-    <p>El libro que está despertando a una generación</p>
+    <img src="header.jpg" alt="ESTOYC O NO ESTOYC - Header"/>
   </header>
 
-  <div class="container">
-    <div class="book-cover">
-      <img src="Book-Cover.jpg" alt="Portada del libro ESTOYC O NO ESTOYC">
-    </div>
-
+  <div class="content">
     <h2>Sobre el libro</h2>
     <p>Una obra directa, divertida y profundamente transformadora. Combina el estoicismo clásico con ejemplos del mundo moderno. Cada capítulo es una píldora de sabiduría con una moraleja que se te queda grabada. Ideal para jóvenes, recomendado para adultos.</p>
 
@@ -97,6 +86,16 @@
 
   <footer>
     © 2025 Pedro by Porto · Contacto: pedro@estoyc.com
-  </footer>
+  
+    <div style="margin-top: 40px;">
+      <p>Sígueme en redes:</p>
+      <p>
+        <a href="https://www.youtube.com/@pedrobyporTo" target="_blank">YouTube</a> ·
+        <a href="https://www.instagram.com/pedrobyporTo" target="_blank">Instagram</a> ·
+        <a href="https://www.tiktok.com/@pedrobyporTo" target="_blank">TikTok</a>
+      </p>
+    </div>
+
+</footer>
 </body>
 </html>
